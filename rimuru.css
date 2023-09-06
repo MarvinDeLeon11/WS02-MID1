@@ -1,0 +1,163 @@
+body {
+    display: flex;
+background-image: url(background.jpg);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: rgb(0,9,28);
+background: linear-gradient(180deg, rgba(0,9,28,1) 5%, rgba(4,18,42,1) 8%, rgba(4,73,141,1) 22%, rgba(2,192,226,1) 40%, rgba(9,63,125,1) 63%, rgba(4,47,97,1) 70%, rgba(15,27,70,1) 85%);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    color: cyan;
+}
+
+header img {
+
+    border-radius: 50%;
+    width: 250px;
+    border: 12px solid #6C6D71;
+}
+
+ol {
+    font-size: 24px;
+    color: white;
+    margin: 10px;
+}
+
+h2 {
+    border-radius: 100px;
+    border: 6px solid #6C6D71;
+    font-size: 40px;
+	text-align: center;
+    color: white;
+}
+
+p {
+    font-size: 30px;
+    color: white;
+}
+
+.slime {
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: slime 10s linear infinite;
+    position: relative;
+    width: 100%;
+}
+
+.slime img {
+    max-width: 10%;
+}
+
+img.new-wallpaper {
+    max-width: 100%;
+    box-shadow: 10px 15px 15px 15px;
+}
+
+p.caption {
+    font-size: 40px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    border-radius: 100px;
+    border: 6px solid #6C6D71;
+}
+
+ul {
+    list-style: none;
+    border-radius: 100px;
+    border: 6px solid gray;
+    font-weight: bold;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+}
+
+.main img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: 6px solid #6C6D71;
+}
+
+.desc {
+    font-style: italic;
+    padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+    text-align: left;
+}
+
+.goblins {
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    padding-inline: block;
+    text-align: center;
+    background: #6C6D71;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes slime {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
